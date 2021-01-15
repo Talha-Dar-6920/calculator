@@ -1,0 +1,81 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-image: linear-gradient(225deg, rgba(255, 255, 0, 0.712) 50%, royalblue 50%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    height: 60vh;
+    width: 20vw;
+    border: 1px solid grey;
+    border-radius: 2rem;
+    background-image: linear-gradient(45deg, rgba(255, 255, 0, 0.712) 50%, royalblue 50%);
+    box-shadow: 1rem 2rem 4rem 2rem rgba(0, 0, 0, .3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input {
+    width: 80%;
+    height: 4rem;
+    border: 1px solid grey;
+    position: relative;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5rem;
+    background-color: honeydew;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    margin: 1rem;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 1.5rem;
+}
+
+button {
+    height: 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0.3rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.685), rgba(255, 255, 255, 0.726));
+}
+
+.numbers button {
+    width: 29%;
+}
+
+.numbers .clear {
+    width: 93%;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
