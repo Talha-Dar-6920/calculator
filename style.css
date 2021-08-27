@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    background-image: linear-gradient(225deg, rgba(255, 255, 0, 0.712) 50%, royalblue 50%);
+    background-image: linear-gradient( 225deg, rgba(255, 255, 0, 0.712) 50%, royalblue 50%);
     width: 100vw;
     height: 100vh;
 }
@@ -17,8 +17,8 @@ body {
     width: 20vw;
     border: 1px solid grey;
     border-radius: 2rem;
-    background-image: linear-gradient(45deg, rgba(255, 255, 0, 0.712) 50%, royalblue 50%);
-    box-shadow: 1rem 2rem 4rem 2rem rgba(0, 0, 0, .3);
+    background-image: linear-gradient( 45deg, rgba(255, 255, 0, 0.712) 50%, royalblue 50%);
+    box-shadow: 1rem 2rem 4rem 2rem rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,7 +63,18 @@ button {
     border-radius: 1rem;
     outline: none;
     border: none;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.685), rgba(255, 255, 255, 0.726));
+    background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.685), rgba(255, 255, 255, 0.726));
+    transition: all 0.5s linear;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.65);
+}
+
+button:active {
+    transform: scale(1.02);
+    box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.65);
 }
 
 .numbers button {
