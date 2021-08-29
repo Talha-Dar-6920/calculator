@@ -1,92 +1,146 @@
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    background-image: linear-gradient( 225deg, rgba(255, 255, 0, 0.712) 50%, royalblue 50%);
-    width: 100vw;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  background-image: linear-gradient(
+    225deg,
+    rgba(255, 255, 0, 0.712) 50%,
+    royalblue 50%
+  );
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
-    height: 60vh;
-    width: 20vw;
-    border: 1px solid grey;
-    border-radius: 2rem;
-    background-image: linear-gradient( 45deg, rgba(255, 255, 0, 0.712) 50%, royalblue 50%);
-    box-shadow: 1rem 2rem 4rem 2rem rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  height: 40rem;
+  width: 25%;
+  border: 1px solid grey;
+  border-radius: 2rem;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 0.712) 50%,
+    royalblue 50%
+  );
+  box-shadow: 1rem 2rem 4rem 2rem rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .input {
-    width: 80%;
-    height: 4rem;
-    border: 1px solid grey;
-    position: relative;
-    top: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 5rem;
-    background-color: honeydew;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #333;
-    font-size: 2rem;
-    font-weight: bold;
+  width: 80%;
+  height: 4rem;
+  border: 1px solid grey;
+  position: relative;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5rem;
+  background-color: honeydew;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .buttons {
-    display: flex;
-    margin: 1rem;
+  display: flex;
+  margin: 1rem;
 }
 
 .numbers {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    margin-left: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-left: 1.5rem;
 }
 
 button {
-    height: 5rem;
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 0.3rem;
-    border-radius: 1rem;
-    outline: none;
-    border: none;
-    background-image: linear-gradient( 135deg, rgba(255, 255, 255, 0.685), rgba(255, 255, 255, 0.726));
-    transition: all 0.5s linear;
+  height: 5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0.3rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.685),
+    rgba(255, 255, 255, 0.726)
+  );
+  transition: all 0.5s linear;
 }
 
 button:hover {
-    transform: scale(1.05);
-    box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.65);
+  transform: scale(1.05);
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.65);
 }
 
 button:active {
-    transform: scale(1.02);
-    box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.65);
+  transform: scale(1.02);
+  box-shadow: 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.65);
 }
 
 .numbers button {
-    width: 29%;
+  width: 29%;
 }
 
 .numbers .clear {
-    width: 93%;
+  width: 93%;
 }
 
 .operators {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .container {
+    width: 95%;
+  }
 }
